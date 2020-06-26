@@ -1,0 +1,179 @@
+html { font-size: 2.4vw; }
+@media all and (min-width:1000px) { html { font-size: 24px; } }
+@media all and (max-width:520px) { html{ font-size: 18px; } }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    list-style: none;
+    margin-left: 1.35rem;
+    padding-left: 1.15rem;
+    margin-bottom: 0.7em;
+    font-size: 95%;
+}
+
+li:before {
+    font-family: "valkyrie-caps";
+    content: "◊"; float:left;
+    margin-left: -1.5rem;
+
+}
+
+no-hyphens {
+  hypens: none;
+}
+
+*:target {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 115%;
+}
+
+#content {
+    padding: 2.5rem 0 10rem 0;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+#content-article {
+  padding: 2.5rem 0 10rem 0;
+    margin-left: 8rem;
+    margin-right: 7rem;
+}
+
+p {
+  margin-bottom: 0.5em;
+    -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+section.article p {
+  margin-bottom: 0.9em;
+}
+
+@media all and (max-width:520px) {
+    #content-article,
+    #content {
+        margin: 1.5rem;
+        padding: 0;
+        padding-bottom: 10rem;
+    }
+    #front-cover {
+      display: none;
+   }
+}
+
+body {
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+    position: relative; z-index: -10000; -webkit-font-smoothing: subpixel-antialiased;
+    font-family: valkyrie-text;
+    line-height: 1.45;
+    font-size: 0.91rem;
+    font-variant-numeric: oldstyle-nums;/* corrects safari rendering */
+    hypens: auto;
+}
+
+sup,
+i {
+  font-family: valkyrie-italic;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+transition-property: background;
+transition-duration: 0.2s;
+}
+
+
+div.nav a:active div { background: #fdfdfd;
+}
+
+a:active { color: #777; }
+
+a:hover {
+background: #fbf3f3;
+transition-property: background;
+transition-duration: 0.2s;
+
+border-radius: 8px;
+}
+
+a:after {
+    position: relative;
+    content: "\FEFF°";
+    margin-left: 0.10em;
+    font-size: 90%;
+    top: -0.10em;
+    color: #933;
+    font-feature-settings: "caps";
+    font-variant-numeric: normal;
+}
+
+section.article > p > a:after {
+  content: ""
+}
+
+sup {
+  color: #933;
+}
+
+
+a[name]:after{ content: none;
+}
+
+h1 {
+  font-family: valkyrie-text;
+  font-size: 2.1em;
+}
+
+article > h2,
+h2.subtitle {
+  font-size: 90%;
+  font-style: normal;
+  font-weight: bolder;
+  font-family: valkyrie-caps;
+  text-transform: uppercase;
+}
+
+section > h2 {
+  font-family: valkyrie-caps;
+}
+
+
+
+html {
+    height: 100%;
+}
+
+
+@font-face {
+  font-family: valkyrie-text;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('../fonts/valkyrie_t4_regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: valkyrie-caps;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('../fonts/valkyrie_c4_bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: valkyrie-italic;
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('../fonts/valkyrie_t3_italic.woff') format('woff');
+}
