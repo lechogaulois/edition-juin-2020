@@ -30,9 +30,11 @@ no-hyphens {
 }
 
 .note:target {
-    padding-left: 2rem;
+    padding-left: 3rem;
     padding-right: 2rem;
-    font-size: 115%;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    font-size: 125%;
 }
 
 #content {
@@ -87,6 +89,14 @@ body {
 sup,
 i {
   font-family: valkyrie-italic;
+}
+
+.notes sup {
+    margin-right: 0.4em;
+}
+
+.notes a {
+    background: #fbf7f7;
 }
 
 a {
@@ -147,6 +157,8 @@ section.article > p > a:after {
 
 sup {
   color: #933;
+  margin-left: 0.3em;
+  padding-right: 0;
 }
 
 
