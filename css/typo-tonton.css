@@ -25,7 +25,11 @@ no-hyphens {
   hypens: none;
 }
 
-*:target {
+.navigation h2 {
+    font-size: 90%;
+}
+
+.note:target {
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 115%;
@@ -93,7 +97,8 @@ transition-duration: 0.2s;
 }
 
 
-div.nav a:active div { background: #fdfdfd;
+div.nav a:active div {
+    background: #fdfdfd;
 }
 
 a:active { color: #777; }
@@ -102,17 +107,37 @@ a:hover {
 background: #fbf3f3;
 transition-property: background;
 transition-duration: 0.2s;
+
 border-radius: 8px;
 }
 
 a:after {
     position: relative;
-    content: "\FEFF°";
+    content: "\FEFF’é→";
     margin-left: 0.10em;
     font-size: 90%;
     top: -0.10em;
     color: #933;
-    font-feature-settings: "caps";
+    font-family: valkyrie-text;
+    text-transform: lowercase;
+}
+
+.soon {
+   background: #fbf3f3;
+    border-radius: 8px;
+}
+
+.soon:after {
+    position: relative;
+    content: "bientôt disponible";
+    margin-left: 0.50em;
+    margin-right: 0.20em;
+    font-size: 90%;
+    top: -0.10em;
+    color: #933;
+    font-family: valkyrie-caps;
+    text-transform: uppercase;
+    font-weight: bold;
     font-variant-numeric: normal;
 }
 
@@ -125,8 +150,7 @@ sup {
 }
 
 
-a[name]:after{ content: none;
-}
+a[name]:after{ content: none;}
 
 h1 {
   font-family: valkyrie-text;
@@ -136,6 +160,14 @@ h1 {
 article > h2,
 h2.subtitle {
   font-size: 90%;
+  font-style: normal;
+  font-weight: bolder;
+  font-family: valkyrie-caps;
+  text-transform: uppercase;
+}
+
+article > h3 {
+    font-size: 80%;
   font-style: normal;
   font-weight: bolder;
   font-family: valkyrie-caps;
@@ -152,6 +184,9 @@ html {
     height: 100%;
 }
 
+em {
+    font-family: valkyrie-italic;
+}
 
 @font-face {
   font-family: valkyrie-text;
