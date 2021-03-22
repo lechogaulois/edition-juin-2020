@@ -30,11 +30,11 @@ no-hyphens {
 }
 
 .note:target {
-    padding-left: 3rem;
-    padding-right: 2rem;
-    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 5rem;
     padding-top: 5rem;
-    font-size: 125%;
+    font-size: 110%;
 }
 
 #content {
