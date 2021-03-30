@@ -93,6 +93,15 @@ i {
 
 .notes sup {
     margin-right: 0.4em;
+    font-size: 75%;
+}
+
+
+sup {
+  color: #933;
+  margin-left: 0.2em;
+  padding-right: 0;
+  font-size: 60%;
 }
 
 .notes a {
@@ -155,11 +164,6 @@ section.article > p > a:after {
   content: ""
 }
 
-sup {
-  color: #933;
-  margin-left: 0.3em;
-  padding-right: 0;
-}
 
 
 a[name]:after{ content: none;}
